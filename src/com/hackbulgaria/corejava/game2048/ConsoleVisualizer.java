@@ -39,21 +39,6 @@ public class ConsoleVisualizer {
 	private MoveDirection getPlayerMove() {
 		MoveDirection moveDirection = null;
 		try {
-			// For debugging purposes
-			// Reader reader = new InputStreamReader(System.in);
-			// char character = (char) reader.read();
-			// System.out.println(character);
-			// switch (character) {
-			// case 'a':
-			// return MoveDirection.MOVE_LEFT;
-			// case 'd':
-			// return MoveDirection.MOVE_RIGHT;
-			// case 'w':
-			// return MoveDirection.MOVE_UP;
-			// case 's':
-			// return MoveDirection.MOVE_DOWN;
-			// }
-
 			Terminal terminal = Terminal.setupTerminal();
 			int c = terminal.readVirtualKey(System.in);
 			if (c == VIRTUAL_LEFT) {
